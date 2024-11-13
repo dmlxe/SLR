@@ -2,16 +2,27 @@ class Dataset:
     """Defines a Dataset"""
     def __init__(self):
         """Initializes the Dataset"""
+        #self._data = [
+        #    [23, 651],
+        #    [26, 762],
+        #    [30, 856],
+        #    [34, 1063],
+        #    [43, 1190],
+        #    [48, 1298],
+        #    [52, 1421],
+        #    [57, 1440],
+        #    [58, 1518]
+        #]
         self._data = [
-            [23, 651],
-            [26, 762],
-            [30, 856],
-            [34, 1063],
-            [43, 1190],
-            [48, 1298],
-            [52, 1421],
-            [57, 1440],
-            [58, 1518]
+            [1, 2],
+            [2, 4],
+            [3, 6],
+            [4, 8],
+            [5, 10],
+            [6, 12],
+            [7, 14],
+            [8, 16],
+            [9, 18]
         ]
         self._dataset_size = len(self._data)
     
@@ -33,7 +44,7 @@ class Dataset:
             y_values.append(point[1])
         return y_values
 
-class LinearRegressionCalculator:
+class LinearRegressionCalculator: # A better name: DiscreteMathUtilities
     """Class for calculating linear regression coefficients."""
     
     def __init__(self, dataset: Dataset):
